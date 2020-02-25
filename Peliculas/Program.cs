@@ -1,26 +1,78 @@
 ﻿using System;
 
-namespace Peliculas
+namespace Class 
 {
-    class Peliculas
+class Pelicula
+{
+    private string  titulo;
+    private Int16 año;
+    private string pais;
+    private string director;
+
+
+    public void settitulo(string titulo)
     {
-        public string Titulo;
-        public Int16 año;
-        public string Pais;
-        public string Director;
+        this.titulo= titulo;
     }
-    class Program
+
+    public string gettitulo()
+    {
+        return this.titulo;
+    }
+
+    public void setaño(Int16 año)
+    {
+        this.año=año;
+    }
+    
+    public Int16 getaño()
+    {
+        return this.año;
+    }
+  public void setpais(string pais)
+    {
+        this.pais=pais;
+    }
+    
+    public string getpais()
+    {
+        return this.pais;
+    }
+public void setdirector(string director)
+    {
+        this.director=director;
+    }
+    
+    public string getdirector()
+    {
+        return this.director;
+    }
+    
+
+
+ 
+
+}
+
+class Program
     {
         static void Main(string[] args)
         {
-            Peliculas pel= new Peliculas();
+          Pelicula pel1 = new Pelicula();
 
+         pel1.settitulo("De aqui a la eternidad");
+          pel1.setaño(1953);
+          pel1.setpais("Estados Unidos");
+          pel1.setdirector("Fred Zinnemann");
 
-            pel.Titulo = "De aqui a la eternidad";
-            pel.año = 1953;
-            pel.Pais = "Estados Unidos";
-            pel.Director = "Fred Zinnemann";
-            Console.WriteLine("Peliculas: {0}, año{1}, Pais{2}, Director{3}", pel.Titulo, pel.año, pel.Pais, pel.Director);
-        }
-    }
-}
+          Console.WriteLine("Pelicula: {0}, Año: {1}, Pais: {2}, Director: {3}", pel1.gettitulo(), pel1.getaño(), pel1.getpais(), pel1.getdirector());
+
+          Pelicula pel2 = new Pelicula();
+
+         pel2.settitulo("Guasón");
+          pel2.setaño(2019);
+          pel2.setpais("Estados Unidos");
+          pel2.setdirector("Todd Phillips");
+
+          Console.WriteLine("Pelicula: {0}, Año: {1}, Pais: {2}, Director: {3}", pel2.gettitulo(), pel2.getaño(), pel2.getpais(), pel2.getdirector());
+        }}}
