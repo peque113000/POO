@@ -48,7 +48,18 @@ public void setdirector(string director)
         return this.director;
     }
     
+public Pelicula(string titulo, Int16 año, string pais, string director)
+{
+    this.titulo=titulo;
+    this.año=año;
+    this.pais=pais;
+    this.director=director;
+}
 
+public Pelicula()
+        {
+
+        }
 
  
 
