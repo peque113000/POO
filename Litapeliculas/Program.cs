@@ -11,7 +11,7 @@ namespace ListaPeliculas
             Console.WriteLine("({0})",nombre);
         }
 
-        public Pelis(string p){
+        public Peli(string p){
             nombre=p;
         }
     }
@@ -26,7 +26,7 @@ namespace ListaPeliculas
             Pelis.Add(new Peli("Toy Stori 4"));
             Pelis.Add(new Peli("Judy"));
             
-            foreach(Peli p in pelis)
+            foreach(Peli p in Pelis)
             p.imprime();
         }
     }
